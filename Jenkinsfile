@@ -2,14 +2,7 @@
  
  agent any
      
-    stages {
-        stage('Getting Project from Git') {
-            steps {
-                echo 'Project is downloading...'
-                git branch:'master', url:'https://github.com/AhmedBoussi/Mlops1.git'
-  
-                 }
-             }
+
           stage('Building docker container') {
             steps {
                 script {
